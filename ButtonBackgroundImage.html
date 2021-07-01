@@ -1,17 +1,10 @@
 <html>
     <head>
         <style type="text/css">
-         .button{
-                
-                background-image: linear-gradient(rgba(255, 255, 0, 0.5),rgba(0, 0, 255, 0.5) );
-                cursor:pointer;
-                border: none;
-                width: 85px;
-                height: 85px;
-            }
+
             .button11{
                 
-                background-image: url("C:/Julian/JS/GIT/ButtonBackgroundImage/image/11.png");
+                background-image: url("11.png");
                 cursor:pointer;
                 border: none;
                 width: 85px;
@@ -19,7 +12,7 @@
             }
             .button12{
                 
-                background-image: url("C:/Julian/JS/GIT/ButtonBackgroundImage/image/12.png");
+                background-image: url("12.png");
                 cursor:pointer;
                 border: none;
                 width: 85px;
@@ -27,7 +20,7 @@
             }
             .button13{
                 
-                background-image: url("C:/Julian/JS/GIT/ButtonBackgroundImage/image/13.png");
+                background-image: url("13.png");
                 cursor:pointer;
                 border: none;
                 width: 85px;
@@ -35,7 +28,7 @@
             }
             .button14{
                 
-                background-image: url("C:/Julian/JS/GIT/ButtonBackgroundImage/image/14.png");
+                background-image: url("14.png");
                 cursor:pointer;
                 border: none;
                 width: 85px;
@@ -43,21 +36,154 @@
             }
             .button21{
                 
-                background-image: url("C:/Julian/JS/GIT/ButtonBackgroundImage/image/21.png");
+                background-image: url("21.png");
                 cursor:pointer;
                 border: none;
                 width: 85px;
                 height: 85px;
             }
+            .button22{
+                
+                background-image: url("22.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button23{
+                
+                background-image: url("23.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button24{
+                
+                background-image: url("24.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button31{
+                
+                background-image: url("31.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button32{
+                
+                background-image: url("32.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button33{
+                
+                background-image: url("33.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button34{
+                
+                background-image: url("34.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button41{
+                
+                background-image: url("41.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button42{
+                
+                background-image: url("42.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button43{
+                
+                background-image: url("43.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .button44{
+                
+                background-image: url("44.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .buttonDim{
+                
+                background-image: url("44.png");
+                cursor:pointer;
+                border: none;
+                width: 85px;
+                height: 85px;
+            }
+            .buttonImg{
+                
+                background-image: url("44.png");
+
+            }
         </style>
+ 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            let classNames = [ "button11", "button12", "button13", "button14",
+                            "button21", "button22", "button23", "button24",
+                            "button31", "button32", "button33", "button34",
+                            "button41", "button42", "button43", "button44 "];
+            let imageNames = [ "11.png", "12.png", "13.png", "14.png",
+                            "21.png", "22.png", "23.png", "24.png",
+                            "31.png", "32.png", "33.png", "34.png",
+                            "41", "button42", "button43", "button44 "];                            
+
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            } 
+
+            $(document).ready(function(){
+                // jQuery methods go here...
+                //$("button").removeClass("button11 button12 button13 button14 button21 button22 button23 button24 button31 button32 button33 button34 button41 button42 button43 button44 ").addClass("button32");
+                $("button").removeClass("button11 button12 button13 button14 button21 button22 button23 button24 button31 button32 button33 button34 button41 button42 button43 button44 ");
+                
+                shuffleArray(classNames);
+
+                $("button").each(function( index ) {
+                    //console.log( index + ": " + $( this ).text() );
+                    $( this ).addClass(classNames[index]);
+                    $( this ).css("background-image",)
+                });
+
+            });
+        </script>
+
     </head>
     <body>
-        <!--input type="button" name="button " value="Search" onclick="showUser()" class="button"/>
-        <input type="image" name="button" value="button" onclick="showUser()" class="button"/>
-        <input type="submit" name="button" value="Search" onclick="showUser()" class="button"/-->
         <div><button class="button11"></button><button class="button12"></button><button class="button13"></button><button class="button14"></button></div>
-        <div><button class="button21"></button><button class="button"></button><button class="button"></button><button class="button"></button></div>
-        <div><button class="button"></button><button class="button"></button><button class="button"><button class="button"></button></button></div>
-        <div><button class="button"></button><button class="button"></button><button class="button"><button class="button"></button></button></div>
+        <div><button class="button21"></button><button class="button22"></button><button class="button23"></button><button class="button24"></button></div>
+        <div><button class="button31"></button><button class="button32"></button><button class="button33"></button><button class="button34"></button></div>
+        <div><button class="button41"></button><button class="button42"></button><button class="button43"></button><button class="button44"></button></div>
     </body>
 </html>
