@@ -131,8 +131,6 @@
                 height: 85px;
             }
             .buttonDim{
-                
-                background-image: url("44.png");
                 cursor:pointer;
                 border: none;
                 width: 85px;
@@ -140,7 +138,7 @@
             }
             .buttonImg{
                 
-                background-image: url("44.png");
+                background-image: url("33.png");
 
             }
         </style>
@@ -154,7 +152,7 @@
             let imageNames = [ "11.png", "12.png", "13.png", "14.png",
                             "21.png", "22.png", "23.png", "24.png",
                             "31.png", "32.png", "33.png", "34.png",
-                            "41", "button42", "button43", "button44 "];                            
+                            "41.png", "42.png", "43.png", "44.png "];                            
 
             function shuffleArray(array) {
                 for (let i = array.length - 1; i > 0; i--) {
@@ -169,11 +167,13 @@
                 $("button").removeClass("button11 button12 button13 button14 button21 button22 button23 button24 button31 button32 button33 button34 button41 button42 button43 button44 ");
                 
                 shuffleArray(classNames);
+                shuffleArray(imageNames);
 
                 $("button").each(function( index ) {
                     //console.log( index + ": " + $( this ).text() );
-                    $( this ).addClass(classNames[index]);
-                    $( this ).css("background-image",)
+                    //$( this ).addClass(classNames[index]);
+                    $( this ).addClass("buttonDim");
+                    $( this ).css("background-image","url(" + imageNames[index] + ")");
                 });
 
             });
